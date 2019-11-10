@@ -6,9 +6,10 @@ public class WallpaperCalculator {
             return 0;
         } else {
             double perimeterRoom = widthRoom * lengthRoom * 2;
-            double calculationOfPanels = Math.ceil(perimeterRoom / widthWallpaper);
-            double numberOfRolls = Math.ceil(calculationOfPanels / lengthWallpaper / (heightRoom + 10.0));
+            double calculationOfPanels = Math.ceil(perimeterRoom / widthWallpaper);//31
+            double numberOfRolls = Math.ceil(calculationOfPanels / (lengthWallpaper / (heightRoom + 0.10)));//   31/10/3.1
             int intNumberOfRolls = (int) numberOfRolls;
+            // 4, 4, 3, 1.06, 10
             return intNumberOfRolls;
         }
     }
@@ -19,7 +20,7 @@ public class WallpaperCalculator {
         } else {
             double perimeterRoom = (widthRoom * lengthRoom) * 2;
             double calculationOfPanels = Math.ceil(perimeterRoom / widthWallpaper);
-            double numberOfRolls = Math.ceil(calculationOfPanels / lengthWallpaper / (heightRoom + 10.0 + offsetLength));
+            double numberOfRolls = Math.ceil(calculationOfPanels / (lengthWallpaper / (heightRoom + 0.10 + offsetLength)));
             int intNumberOfRolls = (int) numberOfRolls;
             return intNumberOfRolls;
         }

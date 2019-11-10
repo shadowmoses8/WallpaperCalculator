@@ -6,13 +6,13 @@ class WallpaperCalculatorTest {
     @Test
     public void calculateWithoutAlignmentTest() {
         WallpaperCalculator wallpaperCalculator = new WallpaperCalculator();
-        assertEquals(41, wallpaperCalculator.calculateWithoutAlignment(4, 4, 3, 1.06, 10));
+        assertEquals(10, wallpaperCalculator.calculateWithoutAlignment(4, 4, 3, 1.06, 10));
     }
 
     @Test
     public void calculateWithDisplacementTest() {
         WallpaperCalculator wallpaperCalculator = new WallpaperCalculator();
-        assertEquals(42, wallpaperCalculator.calculateWithDisplacement(4, 4, 3, 1.06, 10, 0.30));
+        assertEquals(11, wallpaperCalculator.calculateWithDisplacement(4, 4, 3, 1.06, 10, 0.30));
     }
 
 }
