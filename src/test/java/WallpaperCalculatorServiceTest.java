@@ -25,7 +25,7 @@ class WallpaperCalculatorServiceTest {
     @Test
     public void calculateWithoutAlignmentTestAttNull() {
         WallpaperCalculatorService wallpaperCalculator = new WallpaperCalculatorService();
-        assertEquals(0, wallpaperCalculator.calculateWithoutAlignment(-10, -20, 0, 0, 0));
+        assertEquals(0, wallpaperCalculator.calculateWithoutAlignment(-10, -20, -20, -30, -5));
     }
 
 }
