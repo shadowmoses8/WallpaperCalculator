@@ -19,7 +19,7 @@ class WallpaperCalculatorServiceTest {
     @Test
     public void calculateWithDisplacementTestAttNull() {
         WallpaperCalculatorService wallpaperCalculator = new WallpaperCalculatorService();
-        assertEquals(0, wallpaperCalculator.calculateWithDisplacement(0, 0, 0, 0, 0, 0));
+        assertEquals(0, wallpaperCalculator.calculateWithDisplacement(-10, -10, -200, -300, -1, -10));
     }
 
     @Test
