@@ -19,9 +19,10 @@ public class WallpaperCalculatorService {
         if (offsetLength <= 0) {
             return 0;
         }
+        double stockForLevelingAndTrimmingHeight = 0.10;
             double perimeterRoom = (widthRoom * lengthRoom) * 2;
             double calculationOfPanels = Math.ceil(perimeterRoom / widthWallpaper);
-            double numberOfRolls = Math.ceil(calculationOfPanels / (lengthWallpaper / (heightRoom + 0.10 + offsetLength)));
+        double numberOfRolls = Math.ceil(calculationOfPanels / (lengthWallpaper / (heightRoom + stockForLevelingAndTrimmingHeight + offsetLength)));
             int intNumberOfRolls = (int) numberOfRolls;
             return intNumberOfRolls;
     }
