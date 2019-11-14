@@ -3,15 +3,20 @@ public class WallpaperCalculatorService {
     public int calculateWithDisplacement(double widthRoom, double lengthRoom, double heightRoom, double widthWallpaper, double lengthWallpaper, double offsetLength) {
         if (widthRoom <= 0) {
             return 0;
-        } else if (lengthRoom <= 0) {
+        }
+        if (lengthRoom <= 0) {
             return 0;
-        } else if (heightRoom <= 0) {
+        }
+        if (heightRoom <= 0) {
             return 0;
-        } else if (widthWallpaper <= 0) {
+        }
+        if (widthWallpaper <= 0) {
             return 0;
-        } else if (lengthWallpaper <= 0) {
+        }
+        if (lengthWallpaper <= 0) {
             return 0;
-        } else if (offsetLength <= 0) {
+        }
+        if (offsetLength <= 0) {
             return 0;
         }
             double perimeterRoom = (widthRoom * lengthRoom) * 2;
@@ -19,6 +24,5 @@ public class WallpaperCalculatorService {
             double numberOfRolls = Math.ceil(calculationOfPanels / (lengthWallpaper / (heightRoom + 0.10 + offsetLength)));
             int intNumberOfRolls = (int) numberOfRolls;
             return intNumberOfRolls;
-
     }
 }
